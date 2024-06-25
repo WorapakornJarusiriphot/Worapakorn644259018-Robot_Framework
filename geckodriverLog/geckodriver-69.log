@@ -1,0 +1,30 @@
+1719331055018	geckodriver	INFO	Listening on 127.0.0.1:60846
+1719331058089	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60847" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilePqqmh7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719331064100	Marionette	INFO	Marionette enabled
+1719331064538	Marionette	INFO	Listening on port 60861
+WebDriver BiDi listening on ws://127.0.0.1:60847
+Read port: 60861
+1719331064812	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60847/devtools/browser/62167253-030e-423b-81e6-933270b50740
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719331094807	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: http://localhost:3000/_next/static/chunks/main-app.js?v=1719331068136 line 1825 > eval, line 20538: Script terminated by timeout at:
+invokeGuardedCallbackImpl@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:20538:42
+invokeGuardedCallback@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:20689:29
+invokeGuardedCallbackAndCatchFirstError@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:20703:25
+executeDispatch@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32128:42
+processDispatchQueueItemsInOrder@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32160:22
+processDispatchQueue@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32173:37
+dispatchEventsForPlugins@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32184:23
+dispatchEventForPluginEventSystem/<@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32374:12
+batchedUpdates$1@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:24953:12
+batchedUpdates@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:28844:12
+dispatchEventForPluginEventSystem@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32373:17
+dispatchEvent@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:30141:38
+dispatchDiscreteEvent@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:30112:18
+
+1719331160218	Marionette	INFO	Stopped listening on port 60861
+Dynamically enable window occlusion 1

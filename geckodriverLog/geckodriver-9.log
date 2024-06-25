@@ -1,0 +1,33 @@
+1719167409428	geckodriver	INFO	Listening on 127.0.0.1:52300
+1719167412783	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52301" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileaa6wne"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719167423865	Marionette	INFO	Marionette enabled
+1719167424050	Marionette	INFO	Listening on port 52319
+Read port: 52319
+WebDriver BiDi listening on ws://127.0.0.1:52301
+1719167424229	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52301/devtools/browser/5ec3ad95-eee8-4d02-b856-f116bbdad36e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719167450751	Marionette	INFO	Stopped listening on port 52319
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/layout.js line 633 > eval, line 3: Script terminated by timeout at:
+default@webpack-internal:///(app-pages-browser)/./node_modules/@mui/base/node_modules/@mui/utils/useForkRef/useForkRef.js:3:48
+useSlotProps@webpack-internal:///(app-pages-browser)/./node_modules/@mui/base/utils/useSlotProps.js:39:20
+useDesktopPicker@webpack-internal:///(app-pages-browser)/./node_modules/@mui/x-date-pickers/internals/hooks/useDesktopPicker/useDesktopPicker.js:114:83
+DesktopDatePicker@webpack-internal:///(app-pages-browser)/./node_modules/@mui/x-date-pickers/DesktopDatePicker/DesktopDatePicker.js:79:91
+renderWithHooksAgain@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:11272:16
+renderWithHooks@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:11135:18
+updateForwardRef@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15854:20
+beginWork$1@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18521:16
+beginWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14
+performUnitOfWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25748:12
+workLoopSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25464:22
+renderRootSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25419:7
+performConcurrentWorkOnRoot@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:24504:74
+workLoop@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:42
+flushWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14
+performWorkUntilDeadline@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21
+
+Dynamically enable window occlusion 1

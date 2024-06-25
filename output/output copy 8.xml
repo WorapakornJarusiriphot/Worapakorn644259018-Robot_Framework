@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-06-25T21:42:16.326442" rpa="false" schemaversion="5">
+<suite id="s1" name="Registration Test" source="D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 1\registration_test.robot">
+<test id="s1-t1" name="Register With Valid Data" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:42:17.154130" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-25T21:42:17.153104" elapsed="38.139940"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:42:55.297067" level="INFO">Typing text 'วรปกร' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>วรปกร</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:42:55.296047" elapsed="2.434963"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:42:57.740308" level="INFO">Typing text 'จารุศิริพจน์' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>จารุศิริพจน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:42:57.740308" elapsed="2.157672"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:42:59.907157" level="INFO">Typing text 'worapakorn123' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>worapakorn123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:42:59.906109" elapsed="2.105295"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:02.058758" level="INFO">Typing text '0812345678' into text field 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<arg>0812345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:43:02.043127" elapsed="3.649848"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:05.703712" level="INFO">Typing text 'worapakorn@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>worapakorn@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:43:05.703096" elapsed="3.811355"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:09.523237" level="INFO">Typing text 'Password-123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Password-123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:43:09.522222" elapsed="1.984118"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:11.513275" level="INFO">Clicking element 'css=button[aria-label="Choose date"]'.</msg>
+<arg>css=button[aria-label="Choose date"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:43:11.512754" elapsed="1.227184"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:18.035335" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-25T21:43:18.036340" level="FAIL">Element 'css=.MuiPickersCalendar-transitionContainer' not visible after 5 seconds.</msg>
+<arg>css=.MuiPickersCalendar-transitionContainer</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-25T21:43:12.757905" elapsed="5.286126">Element 'css=.MuiPickersCalendar-transitionContainer' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(@aria-label, "Jan 1, 1990")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:43:18.049033" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=input[type='radio'][value='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:43:18.053697" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:43:18.066790" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>สมัครสมาชิกสำเร็จ!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:43:18.079101" elapsed="0.000548"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-06-25T21:43:18.095745" elapsed="0.000747"/>
+</kw>
+<status status="FAIL" start="2024-06-25T21:42:17.146729" elapsed="60.954763">Element 'css=.MuiPickersCalendar-transitionContainer' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t2" name="Register Without Any Data" line="26">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:18.114437" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-25T21:43:18.113411" elapsed="37.389159"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:55.502570" level="INFO">Clicking button 'css=button[type="submit"]'.</msg>
+<arg>css=button[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:43:55.502570" elapsed="1.699424"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:57.226918" level="INFO">Current page contains text 'กรุณากรอกชื่อจริง'.</msg>
+<arg>กรุณากรอกชื่อจริง</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-25T21:43:57.203705" elapsed="0.024218"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:57.251183" level="INFO">Current page contains text 'กรุณากรอกนามสกุล'.</msg>
+<arg>กรุณากรอกนามสกุล</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-25T21:43:57.233695" elapsed="0.018503"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:57.285186" level="INFO">Current page contains text 'กรุณากรอกชื่อผู้ใช้'.</msg>
+<arg>กรุณากรอกชื่อผู้ใช้</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-25T21:43:57.270191" elapsed="0.014995"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:57.338574" level="INFO">Current page contains text 'กรุณากรอกหมายเลขโทรศัพท์'.</msg>
+<arg>กรุณากรอกหมายเลขโทรศัพท์</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-25T21:43:57.323477" elapsed="0.015097"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:57.366498" level="INFO">Current page contains text 'กรุณากรอกอีเมล'.</msg>
+<arg>กรุณากรอกอีเมล</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-25T21:43:57.349822" elapsed="0.017683"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:57.406310" level="INFO">Current page contains text 'กรุณากรอกรหัสผ่าน'.</msg>
+<arg>กรุณากรอกรหัสผ่าน</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-25T21:43:57.387499" elapsed="0.018811"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:57.428888" level="INFO">Current page contains text 'กรุณาเลือกวันเกิด'.</msg>
+<arg>กรุณาเลือกวันเกิด</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-25T21:43:57.410343" elapsed="0.019555"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:43:57.460639" level="INFO">Current page contains text 'กรุณาเลือกเพศ'.</msg>
+<arg>กรุณาเลือกเพศ</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-25T21:43:57.445887" elapsed="0.015764"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-25T21:43:57.468190" elapsed="6.828063"/>
+</kw>
+<status status="PASS" start="2024-06-25T21:43:18.109064" elapsed="46.188187"/>
+</test>
+<test id="s1-t3" name="Register With Invalid Email" line="39">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:44:04.300240" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-25T21:44:04.299242" elapsed="35.099211"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:44:39.401448" level="INFO">Typing text 'วรปกร' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>วรปกร</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:44:39.400452" elapsed="2.607685"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:44:42.022152" level="INFO">Typing text 'จารุศิริพจน์' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>จารุศิริพจน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:44:42.021137" elapsed="1.998326"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:44:44.029339" level="INFO">Typing text 'worapakorn123' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>worapakorn123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:44:44.028334" elapsed="2.947790"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:44:46.976124" level="INFO">Typing text '0812345678' into text field 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<arg>0812345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:44:46.976124" elapsed="1.954425"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:44:48.934548" level="INFO">Typing text 'worapakorn@invalid' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>worapakorn@invalid</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:44:48.933543" elapsed="3.410215"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:44:52.361619" level="INFO">Typing text 'Password-123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Password-123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:44:52.359487" elapsed="2.448480"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:44:54.823032" level="INFO">Clicking element 'css=button[aria-label="Choose date"]'.</msg>
+<arg>css=button[aria-label="Choose date"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:44:54.823032" elapsed="1.538509"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:45:01.504853" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-25T21:45:01.504853" level="FAIL">Element 'css=.MuiPickersCalendar-transitionContainer' not visible after 5 seconds.</msg>
+<arg>css=.MuiPickersCalendar-transitionContainer</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-25T21:44:56.379169" elapsed="5.127754">Element 'css=.MuiPickersCalendar-transitionContainer' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(@aria-label, "Jan 1, 1990")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:45:01.508661" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=input[type='radio'][value='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:45:01.510490" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:45:01.511032" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>กรุณากรอกอีเมลให้ถูกต้อง</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:45:01.512150" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-06-25T21:45:01.512150" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-25T21:44:04.298242" elapsed="57.214940">Element 'css=.MuiPickersCalendar-transitionContainer' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t4" name="Register With Duplicate Email Or Username" line="55">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:45:01.517175" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-25T21:45:01.516182" elapsed="27.635307"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:45:29.165745" level="INFO">Typing text 'วรปกร' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>วรปกร</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:45:29.165745" elapsed="2.742342"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:45:31.915214" level="INFO">Typing text 'จารุศิริพจน์' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>จารุศิริพจน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:45:31.909686" elapsed="2.130515"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:45:34.046774" level="INFO">Typing text 'worapakorn20' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>worapakorn20</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:45:34.045761" elapsed="2.042291"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:45:36.095229" level="INFO">Typing text '0623844415' into text field 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<arg>0623844415</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:45:36.095229" elapsed="1.775009"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:45:37.871237" level="INFO">Typing text 'worapakorn20@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>worapakorn20@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:45:37.871237" elapsed="3.621204"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:45:41.492441" level="INFO">Typing text 'Password-123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Password-123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:45:41.492441" elapsed="1.889099"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:45:43.383550" level="INFO">Clicking element 'css=button[aria-label="Choose date"]'.</msg>
+<arg>css=button[aria-label="Choose date"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T21:45:43.382543" elapsed="1.503651"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-25T21:45:50.046954" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-25T21:45:50.047496" level="FAIL">Element 'css=.MuiPickersCalendar-transitionContainer' not visible after 5 seconds.</msg>
+<arg>css=.MuiPickersCalendar-transitionContainer</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-25T21:45:44.887192" elapsed="5.161506">Element 'css=.MuiPickersCalendar-transitionContainer' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(@aria-label, "May 13, 2024")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:45:50.060348" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=input[type='radio'][value='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:45:50.062850" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:45:50.072599" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>E-mail หรือ Username นี้มีอยู่ในระบบแล้ว</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-06-25T21:45:50.101656" elapsed="0.001470"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-06-25T21:45:50.105737" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-25T21:45:01.515185" elapsed="48.592961">Element 'css=.MuiPickersCalendar-transitionContainer' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2024-06-25T21:42:16.331750" elapsed="213.796749"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="3" skip="0" id="s1" name="Registration Test">Registration Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

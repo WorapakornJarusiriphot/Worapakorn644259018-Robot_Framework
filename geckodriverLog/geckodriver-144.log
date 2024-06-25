@@ -1,0 +1,22 @@
+1719351220032	geckodriver	INFO	Listening on 127.0.0.1:58020
+1719351223105	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58021" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileU7U3Th"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719351229371	Marionette	INFO	Marionette enabled
+1719351229570	Marionette	INFO	Listening on port 58036
+WebDriver BiDi listening on ws://127.0.0.1:58021
+Read port: 58036
+1719351230005	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58021/devtools/browser/8c4880a1-d05f-444e-907e-993d056a4672
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719351242153	Marionette	INFO	Stopped listening on port 58036
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/layout.js line 5153 > eval, line 3: Script terminated by timeout at:
+default@webpack-internal:///(app-pages-browser)/./node_modules/date-fns/esm/_lib/requiredArgs/index.js:3:48
+parseISO@webpack-internal:///(app-pages-browser)/./node_modules/date-fns/esm/parseISO/index.js:44:8
+formatDateTime@webpack-internal:///(app-pages-browser)/./src/Page/PostGames.jsx:75:109
+fetchPosts/postsWithParticipants<@webpack-internal:///(app-pages-browser)/./src/Page/PostGames.jsx:152:40
+fetchPosts@webpack-internal:///(app-pages-browser)/./src/Page/PostGames.jsx:141:103
+
+Dynamically enable window occlusion 1

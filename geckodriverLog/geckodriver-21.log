@@ -1,0 +1,49 @@
+1719323440322	geckodriver	INFO	Listening on 127.0.0.1:62552
+1719323443305	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62553" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileRDLvIS"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719323455045	Marionette	INFO	Marionette enabled
+1719323455665	Marionette	INFO	Listening on port 62571
+WebDriver BiDi listening on ws://127.0.0.1:62553
+Read port: 62571
+1719323456581	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62553/devtools/browser/7083f71d-e024-4c91-b7e8-4d49e56a331e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719323485337	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/sign-up/page.js line 5869 > eval, line 669: Script terminated by timeout at:
+resolve@webpack-internal:///(app-pages-browser)/./node_modules/yup/index.esm.js:669:3
+_cast@webpack-internal:///(app-pages-browser)/./node_modules/yup/index.esm.js:1825:23
+_validate@webpack-internal:///(app-pages-browser)/./node_modules/yup/index.esm.js:716:20
+_validate@webpack-internal:///(app-pages-browser)/./node_modules/yup/index.esm.js:1865:11
+validate/<@webpack-internal:///(app-pages-browser)/./node_modules/yup/index.esm.js:827:52
+validate@webpack-internal:///(app-pages-browser)/./node_modules/yup/index.esm.js:827:12
+validateYupSchema@webpack-internal:///(app-pages-browser)/./node_modules/formik/dist/formik.esm.js:1194:52
+useFormik/runValidationSchema<@webpack-internal:///(app-pages-browser)/./node_modules/formik/dist/formik.esm.js:484:83
+useFormik/runAllValidations<@webpack-internal:///(app-pages-browser)/./node_modules/formik/dist/formik.esm.js:536:84
+useFormik/validateFormWithHighPriority<@webpack-internal:///(app-pages-browser)/./node_modules/formik/dist/formik.esm.js:556:12
+useEventCallback/<@webpack-internal:///(app-pages-browser)/./node_modules/formik/dist/formik.esm.js:1315:24
+useFormik/setFieldTouched<@webpack-internal:///(app-pages-browser)/./node_modules/formik/dist/formik.esm.js:834:27
+useEventCallback/<@webpack-internal:///(app-pages-browser)/./node_modules/formik/dist/formik.esm.js:1315:24
+useFormik/executeBlur<@webpack-internal:///(app-pages-browser)/./node_modules/formik/dist/formik.esm.js:855:20
+useFormik/handleBlur<@webpack-internal:///(app-pages-browser)/./node_modules/formik/dist/formik.esm.js:863:18
+useEventCallback/<@webpack-internal:///(app-pages-browser)/./node_modules/formik/dist/formik.esm.js:1315:24
+handleBlur@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/InputBase/InputBase.js:414:19
+callCallback@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:20565:14
+invokeGuardedCallbackImpl@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:20614:16
+invokeGuardedCallback@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:20689:29
+invokeGuardedCallbackAndCatchFirstError@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:20703:25
+executeDispatch@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32128:42
+processDispatchQueueItemsInOrder@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32160:22
+processDispatchQueue@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32173:37
+dispatchEventsForPlugins@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32184:23
+dispatchEventForPluginEventSystem/<@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32374:12
+batchedUpdates$1@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:24953:12
+batchedUpdates@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:28844:12
+dispatchEventForPluginEventSystem@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:32373:17
+dispatchEvent@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:30141:38
+dispatchDiscreteEvent@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:30112:18
+
+JavaScript error: http://localhost:3000/_next/static/chunks/main-app.js?v=1719323474701 line 1825 > eval, line 20624: Error: An error was thrown inside one of your components, but React doesn't know what it was. This is likely due to browser flakiness. React does its best to preserve the "Pause on exceptions" behavior of the DevTools, which requires some DEV-mode only tricks. It's possible that these don't work in your browser. Try triggering the error in production mode, or switching to a modern browser. If you suspect that this is actually an issue with React, please file an issue.
+1719323741674	Marionette	INFO	Stopped listening on port 62571
+Dynamically enable window occlusion 1

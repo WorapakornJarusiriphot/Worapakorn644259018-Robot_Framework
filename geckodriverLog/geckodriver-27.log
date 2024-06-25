@@ -1,0 +1,16 @@
+1719324150950	geckodriver	INFO	Listening on 127.0.0.1:63970
+1719324154288	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63971" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilecRMm0o"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719324165824	Marionette	INFO	Marionette enabled
+1719324166176	Marionette	INFO	Listening on port 63988
+WebDriver BiDi listening on ws://127.0.0.1:63971
+Read port: 63988
+1719324166984	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63971/devtools/browser/1bc8b2b1-e6e0-4bf0-8c86-b0059a6d2600
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719324195953	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1719324824709	Marionette	INFO	Stopped listening on port 63988
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/UrlClassifierListManager.sys.mjs, line 472: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]

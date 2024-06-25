@@ -1,0 +1,19 @@
+1719323497896	geckodriver	INFO	Listening on 127.0.0.1:62665
+1719323501033	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62666" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilen4e5zW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719323512332	Marionette	INFO	Marionette enabled
+1719323512729	Marionette	INFO	Listening on port 62692
+Read port: 62692
+WebDriver BiDi listening on ws://127.0.0.1:62666
+1719323513181	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62666/devtools/browser/a33f58c1-2702-4629-bf36-3c6c314307f8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719323527377	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+1719323527938	Marionette	INFO	Stopped listening on port 62692
+Dynamically enable window occlusion 1

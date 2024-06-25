@@ -1,0 +1,32 @@
+1719345679338	geckodriver	INFO	Listening on 127.0.0.1:64885
+1719345682411	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64886" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilewMO0uM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719345688919	Marionette	INFO	Marionette enabled
+1719345689104	Marionette	INFO	Listening on port 64902
+WebDriver BiDi listening on ws://127.0.0.1:64886
+Read port: 64902
+1719345689367	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64886/devtools/browser/137a52b8-91b8-4ec2-81f1-7dbf80542731
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719345702135	Marionette	INFO	Stopped listening on port 64902
+JavaScript warning: http://localhost:3000/_next/static/chunks/main-app.js?v=1719345692637 line 1902 > eval, line 1253: Script terminated by timeout at:
+ReactElement@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react/cjs/react.development.js:1253:12
+createElement@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react/cjs/react.development.js:1399:29
+createStyled/</Styled<@webpack-internal:///(app-pages-browser)/./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js:156:62
+withEmotionCache/<@webpack-internal:///(app-pages-browser)/./node_modules/@emotion/react/dist/emotion-element-43c6fea0.browser.esm.js:61:12
+renderWithHooksAgain@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:11272:16
+renderWithHooks@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:11135:18
+updateForwardRef@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15854:20
+beginWork$1@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18521:16
+beginWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14
+performUnitOfWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25748:12
+workLoopSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25464:22
+renderRootSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25419:7
+performConcurrentWorkOnRoot@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:24504:74
+workLoop@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:256:42
+flushWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:225:14
+performWorkUntilDeadline@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:534:21
+
+Dynamically enable window occlusion 1

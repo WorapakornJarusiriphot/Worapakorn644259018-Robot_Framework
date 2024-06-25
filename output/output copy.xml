@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.9 on win32)" generated="20240624 01:30:07.566" rpa="false" schemaversion="3">
+<suite id="s1" name="Login Test" source="D:\University Work\Year 4, Term 1\Advanced Software Testing\Task\Task 1\login_test.robot">
+<test id="s1-t1" name="Login With Valid Credentials" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240624 01:30:08.491" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
+<msg timestamp="20240624 01:30:08.557" level="INFO">Executing: C:\Users\Dell\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --output json</msg>
+<status status="PASS" starttime="20240624 01:30:08.489" endtime="20240624 01:30:37.153"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=identifier</arg>
+<arg>Worapakorn2@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240624 01:30:37.165" level="INFO">Typing text 'Worapakorn2@gmail.com' into text field 'id=identifier'.</msg>
+<status status="PASS" starttime="20240624 01:30:37.163" endtime="20240624 01:30:40.891"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>111111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240624 01:30:40.931" level="INFO">Typing text '111111' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20240624 01:30:40.931" endtime="20240624 01:30:41.698"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//button[@type="submit"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240624 01:30:41.721" endtime="20240624 01:30:41.804"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240624 01:30:41.848" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20240624 01:30:41.847" endtime="20240624 01:30:42.435"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//button[text()="ออกจากระบบ"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240624 01:30:42.453" endtime="20240624 01:30:50.002"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>http://localhost:3000/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20240624 01:30:50.030" level="INFO">Current location is 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20240624 01:30:50.025" endtime="20240624 01:30:50.030"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>ออกจากระบบ</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240624 01:30:50.336" level="INFO">Current page contains text 'ออกจากระบบ'.</msg>
+<status status="PASS" starttime="20240624 01:30:50.036" endtime="20240624 01:30:50.336"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Execute JavaScript</arg>
+<arg>return localStorage.getItem('access_token');</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>return localStorage.getItem('access_token');</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240624 01:30:50.466" level="INFO">Executing JavaScript:
+return localStorage.getItem('access_token');
+Without any arguments.</msg>
+<status status="PASS" starttime="20240624 01:30:50.464" endtime="20240624 01:30:50.569"/>
+</kw>
+<status status="PASS" starttime="20240624 01:30:50.462" endtime="20240624 01:30:50.569"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240624 01:30:50.744" endtime="20240624 01:30:59.680"/>
+</kw>
+<status status="PASS" starttime="20240624 01:30:08.486" endtime="20240624 01:30:59.681"/>
+</test>
+<test id="s1-t2" name="Login With Invalid Username" line="20">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240624 01:30:59.684" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
+<msg timestamp="20240624 01:30:59.706" level="INFO">Executing: C:\Users\Dell\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --output json</msg>
+<status status="PASS" starttime="20240624 01:30:59.683" endtime="20240624 01:31:14.040"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=identifier</arg>
+<arg>wrongemail@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240624 01:31:14.059" level="INFO">Typing text 'wrongemail@gmail.com' into text field 'id=identifier'.</msg>
+<status status="PASS" starttime="20240624 01:31:14.056" endtime="20240624 01:31:15.312"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>111111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240624 01:31:15.313" level="INFO">Typing text '111111' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20240624 01:31:15.313" endtime="20240624 01:31:15.583"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//button[@type="submit"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240624 01:31:15.583" endtime="20240624 01:31:15.611"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240624 01:31:15.612" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20240624 01:31:15.611" endtime="20240624 01:31:15.951"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>คุณกรอก E-mail ไม่ถูกต้อง</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240624 01:31:15.968" level="INFO">Current page contains text 'คุณกรอก E-mail ไม่ถูกต้อง'.</msg>
+<status status="PASS" starttime="20240624 01:31:15.954" endtime="20240624 01:31:15.969"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240624 01:31:15.972" endtime="20240624 01:31:20.665"/>
+</kw>
+<status status="PASS" starttime="20240624 01:30:59.682" endtime="20240624 01:31:20.691"/>
+</test>
+<test id="s1-t3" name="Login With Invalid Password" line="29">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240624 01:31:20.704" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
+<msg timestamp="20240624 01:31:20.730" level="INFO">Executing: C:\Users\Dell\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --output json</msg>
+<status status="PASS" starttime="20240624 01:31:20.703" endtime="20240624 01:31:35.050"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=identifier</arg>
+<arg>Worapakorn2@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240624 01:31:35.059" level="INFO">Typing text 'Worapakorn2@gmail.com' into text field 'id=identifier'.</msg>
+<status status="PASS" starttime="20240624 01:31:35.057" endtime="20240624 01:31:36.493"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>wrongpassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240624 01:31:36.495" level="INFO">Typing text 'wrongpassword' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20240624 01:31:36.494" endtime="20240624 01:31:37.236"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//button[@type="submit"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240624 01:31:37.266" endtime="20240624 01:31:37.306"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240624 01:31:37.313" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20240624 01:31:37.312" endtime="20240624 01:31:37.773"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>คุณกรอก Password ผิด กรุณากรอก Password ให้ถูกต้อง</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240624 01:31:37.842" level="INFO">Current page contains text 'คุณกรอก Password ผิด กรุณากรอก Password ให้ถูกต้อง'.</msg>
+<status status="PASS" starttime="20240624 01:31:37.817" endtime="20240624 01:31:37.843"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240624 01:31:37.850" endtime="20240624 01:31:41.896"/>
+</kw>
+<status status="PASS" starttime="20240624 01:31:20.702" endtime="20240624 01:31:41.897"/>
+</test>
+<test id="s1-t4" name="Login Without Any Data" line="38">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240624 01:31:41.903" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
+<msg timestamp="20240624 01:31:41.927" level="INFO">Executing: C:\Users\Dell\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --output json</msg>
+<status status="PASS" starttime="20240624 01:31:41.902" endtime="20240624 01:31:59.572"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//button[@type="submit"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240624 01:31:59.655" endtime="20240624 01:31:59.742"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240624 01:31:59.754" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20240624 01:31:59.752" endtime="20240624 01:32:00.752"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>กรุณากรอกอีเมลหรือชื่อผู้ใช้</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240624 01:32:00.770" level="INFO">Current page contains text 'กรุณากรอกอีเมลหรือชื่อผู้ใช้'.</msg>
+<status status="PASS" starttime="20240624 01:32:00.753" endtime="20240624 01:32:00.770"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>กรุณากรอกรหัสผ่าน</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240624 01:32:00.788" level="INFO">Current page contains text 'กรุณากรอกรหัสผ่าน'.</msg>
+<status status="PASS" starttime="20240624 01:32:00.772" endtime="20240624 01:32:00.788"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240624 01:32:00.789" endtime="20240624 01:32:07.215"/>
+</kw>
+<status status="PASS" starttime="20240624 01:31:41.899" endtime="20240624 01:32:07.216"/>
+</test>
+<status status="PASS" starttime="20240624 01:30:07.572" endtime="20240624 01:32:07.218"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Login Test">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

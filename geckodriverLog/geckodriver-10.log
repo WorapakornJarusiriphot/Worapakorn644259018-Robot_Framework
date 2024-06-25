@@ -1,0 +1,17 @@
+1719167460193	geckodriver	INFO	Listening on 127.0.0.1:52411
+1719167463214	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52412" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileInArU1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719167463974	Marionette	INFO	Marionette enabled
+1719167464214	Marionette	INFO	Listening on port 52423
+WebDriver BiDi listening on ws://127.0.0.1:52412
+Read port: 52423
+1719167464442	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52412/devtools/browser/1565bc06-330e-4ead-9a3a-19b9ca443f02
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719167475975	Marionette	INFO	Stopped listening on port 52423
+JavaScript warning: http://localhost:3000/_next/static/chunks/main-app.js?v=1719167470647 line 1002 > eval, line 111: Script terminated by timeout at:
+useWebsocketPing/</interval<@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/use-websocket.js:111:30
+
+Dynamically enable window occlusion 1

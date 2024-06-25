@@ -1,0 +1,20 @@
+1719326233030	geckodriver	INFO	Listening on 127.0.0.1:51449
+1719326235998	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51450" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileQ8Zshn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719326246957	Marionette	INFO	Marionette enabled
+1719326247335	Marionette	INFO	Listening on port 51472
+WebDriver BiDi listening on ws://127.0.0.1:51450
+Read port: 51472
+1719326248310	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51450/devtools/browser/615da04c-09f0-4031-be98-4db6d138b223
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719326277004	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/sign-up/page.js line 5566 > eval, line 8042: Script terminated by timeout at:
+startPolling/this.pollTimer<@webpack-internal:///(app-pages-browser)/./node_modules/firebase/node_modules/@firebase/auth/dist/esm2017/index-fbeda258.js:8042:44
+
+1719326779848	Marionette	INFO	Stopped listening on port 51472
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/UrlClassifierListManager.sys.mjs, line 472: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]

@@ -1,0 +1,34 @@
+1719326537470	geckodriver	INFO	Listening on 127.0.0.1:51982
+1719326540429	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51983" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileafBlLP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719326552177	Marionette	INFO	Marionette enabled
+1719326552611	Marionette	INFO	Listening on port 52004
+Read port: 52004
+WebDriver BiDi listening on ws://127.0.0.1:51983
+1719326552981	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51983/devtools/browser/bb1440fd-d129-4d4f-aa1b-4e2b4b10ef31
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719326582303	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/sign-up/page.js line 5566 > eval, line 7770: Script terminated by timeout at:
+toPromise/</<@webpack-internal:///(app-pages-browser)/./node_modules/firebase/node_modules/@firebase/auth/dist/esm2017/index-fbeda258.js:7770:17
+
+1719326780586	Marionette	INFO	Stopped listening on port 52004
+Dynamically enable window occlusion 1
+JavaScript warning: http://localhost:3000/_next/static/chunks/main-app.js?v=1719326569914 line 1825 > eval, line 9246: Script terminated by timeout at:
+checkIfUseWrappedInTryCatch@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:9246:9
+finishRenderingHooks@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:11190:9
+renderWithHooks@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:11141:23
+updateForwardRef@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15854:20
+beginWork$1@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18521:16
+beginWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14
+performUnitOfWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25748:12
+workLoopSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25464:22
+renderRootSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25419:7
+performSyncWorkOnRoot@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:24887:34
+flushSyncWorkAcrossRoots_impl@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7758:34
+flushSyncWorkOnAllRoots@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7718:32
+processRootScheduleInMicrotask@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7863:3
+scheduleImmediateTask/<@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:8034:7
+

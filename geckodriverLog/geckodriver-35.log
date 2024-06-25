@@ -1,0 +1,40 @@
+1719325516655	geckodriver	INFO	Listening on 127.0.0.1:50124
+1719325519667	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50125" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileLwK7KP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719325530591	Marionette	INFO	Marionette enabled
+1719325530963	Marionette	INFO	Listening on port 50150
+WebDriver BiDi listening on ws://127.0.0.1:50125
+Read port: 50150
+1719325531639	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50125/devtools/browser/2ed0bcec-5406-4fa9-b834-bac879f679fd
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719325560651	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/sign-up/page.js line 5566 > eval, line 7770: Script terminated by timeout at:
+toPromise/</<@webpack-internal:///(app-pages-browser)/./node_modules/firebase/node_modules/@firebase/auth/dist/esm2017/index-fbeda258.js:7770:17
+
+1719326426040	Marionette	INFO	Stopped listening on port 50150
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/layout.js line 3548 > eval, line 3: Script terminated by timeout at:
+default@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/node_modules/@mui/utils/generateUtilityClass/generateUtilityClass.js:3:48
+getInputBaseUtilityClass@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/InputBase/inputBaseClasses.js:10:15
+composeClasses/</output[slot]<@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/node_modules/@mui/utils/composeClasses/composeClasses.js:13:53
+composeClasses/<@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/node_modules/@mui/utils/composeClasses/composeClasses.js:11:36
+composeClasses@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/node_modules/@mui/utils/composeClasses/composeClasses.js:8:24
+useUtilityClasses@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/InputBase/InputBase.js:154:81
+InputBase@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/InputBase/InputBase.js:511:38
+renderWithHooks@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:11121:27
+updateForwardRef@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15854:20
+beginWork$1@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18521:16
+beginWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14
+performUnitOfWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25748:12
+workLoopSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25464:22
+renderRootSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25419:7
+performSyncWorkOnRoot@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:24887:34
+flushSyncWorkAcrossRoots_impl@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7758:34
+flushSyncWorkOnAllRoots@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7718:32
+processRootScheduleInMicrotask@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7863:3
+scheduleImmediateTask/<@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:8034:7
+

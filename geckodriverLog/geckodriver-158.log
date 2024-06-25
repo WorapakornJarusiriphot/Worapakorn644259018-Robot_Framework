@@ -1,0 +1,24 @@
+1719353843438	geckodriver	INFO	Listening on 127.0.0.1:62373
+1719353846499	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62374" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilebwf5Tt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719353853408	Marionette	INFO	Marionette enabled
+1719353853599	Marionette	INFO	Listening on port 62391
+WebDriver BiDi listening on ws://127.0.0.1:62374
+Read port: 62391
+1719353853949	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62374/devtools/browser/4c84f2db-1973-4c44-83ea-7fdf8a17367b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719353865071	Marionette	INFO	Stopped listening on port 62391
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/layout.js line 5417 > eval, line 7: Script terminated by timeout at:
+buildLocalizeFn/<@webpack-internal:///(app-pages-browser)/./node_modules/date-fns/esm/locale/_lib/buildLocalizeFn/index.js:7:23
+M@webpack-internal:///(app-pages-browser)/./node_modules/date-fns/esm/_lib/format/formatters/index.js:245:33
+format/result<@webpack-internal:///(app-pages-browser)/./node_modules/date-fns/esm/format/index.js:395:20
+format@webpack-internal:///(app-pages-browser)/./node_modules/date-fns/esm/format/index.js:378:47
+formatDateTime@webpack-internal:///(app-pages-browser)/./src/Page/PostGames.jsx:76:118
+fetchPosts/postsWithParticipants<@webpack-internal:///(app-pages-browser)/./src/Page/PostGames.jsx:152:40
+fetchPosts@webpack-internal:///(app-pages-browser)/./src/Page/PostGames.jsx:141:103
+
+Dynamically enable window occlusion 1

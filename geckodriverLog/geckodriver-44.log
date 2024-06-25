@@ -1,0 +1,35 @@
+1719326701658	geckodriver	INFO	Listening on 127.0.0.1:52436
+1719326704636	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52437" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileC8udzm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719326715845	Marionette	INFO	Marionette enabled
+1719326716207	Marionette	INFO	Listening on port 52461
+WebDriver BiDi listening on ws://127.0.0.1:52437
+Read port: 52461
+1719326716591	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52437/devtools/browser/a96815c4-c7d0-4707-8083-510dd373e53d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719326745871	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/layout.js line 2778 > eval, line 250: Script terminated by timeout at:
+FocusTrap/</interval<@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/node_modules/@mui/base/FocusTrap/FocusTrap.js:250:17
+
+1719326784571	Marionette	INFO	Stopped listening on port 52461
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/layout.js line 171 > eval, line 5: Script terminated by timeout at:
+registerStyles@webpack-internal:///(app-pages-browser)/./node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js:5:90
+Insertion@webpack-internal:///(app-pages-browser)/./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js:56:6
+renderWithHooks@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:11121:27
+updateFunctionComponent@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:16290:20
+beginWork$1@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18472:16
+beginWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14
+performUnitOfWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25748:12
+workLoopSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25464:22
+renderRootSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25419:7
+performSyncWorkOnRoot@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:24887:34
+flushSyncWorkAcrossRoots_impl@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7758:34
+flushSyncWorkOnAllRoots@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7718:32
+processRootScheduleInMicrotask@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7863:3
+scheduleImmediateTask/<@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:8034:7
+

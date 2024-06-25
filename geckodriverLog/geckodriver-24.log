@@ -1,0 +1,32 @@
+1719323586415	geckodriver	INFO	Listening on 127.0.0.1:62899
+1719323589463	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62900" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileCUFca1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719323593079	Marionette	INFO	Marionette enabled
+1719323593640	Marionette	INFO	Listening on port 62928
+WebDriver BiDi listening on ws://127.0.0.1:62900
+Read port: 62928
+1719323594610	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62900/devtools/browser/6a3d253b-80b2-430a-9bea-883880b7298f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:3000."
+1719323623146	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: services.settings: main/partitioning-exempt-urls sync already running
+1719323743846	Marionette	INFO	Stopped listening on port 62928
+Dynamically enable window occlusion 1
+JavaScript warning: http://localhost:3000/_next/static/chunks/app/sign-up/page.js line 688 > eval, line 48: Script terminated by timeout at:
+useUtilityClasses@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/FormControl/FormControl.js:48:41
+FormControl@webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/FormControl/FormControl.js:130:38
+renderWithHooks@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:11121:27
+updateForwardRef@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:15854:20
+beginWork$1@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:18521:16
+beginWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:26927:14
+performUnitOfWork@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25748:12
+workLoopSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25464:22
+renderRootSync@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:25419:7
+performSyncWorkOnRoot@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:24887:34
+flushSyncWorkAcrossRoots_impl@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7758:34
+flushSyncWorkOnAllRoots@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7718:32
+processRootScheduleInMicrotask@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:7863:3
+scheduleImmediateTask/<@webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:8034:7
+
