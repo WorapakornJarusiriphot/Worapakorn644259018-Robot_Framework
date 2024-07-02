@@ -1,238 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-06-26T05:17:22.921896" rpa="false" schemaversion="5">
-<suite id="s1" name="Login Test" source="D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 1\login_test.robot">
-<test id="s1-t1" name="TC 1.0.001 ทดสอบการเข้าสู่ระบบและตรวจสอบสิทธิ" line="9">
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-07-02T23:28:24.113909" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 1 robot framework (github)\login_test.robot">
+<test id="s1-t1" name="TC 1.0.001 ทดสอบการเข้าสู่ระบบและตรวจสอบสิทธิ" line="10">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:17:23.356640" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
+<msg time="2024-07-02T23:28:24.999659" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
 <arg>${URL}</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-26T05:17:23.356113" elapsed="17.468441"/>
+<status status="PASS" start="2024-07-02T23:28:24.998658" elapsed="15.224934"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-26T05:17:40.825547" elapsed="0.283313"/>
+<status status="PASS" start="2024-07-02T23:28:40.224585" elapsed="0.271795"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:17:41.109864" level="INFO">Typing text 'Worapakorn2@gmail.com' into text field 'id=identifier'.</msg>
+<msg time="2024-07-02T23:28:40.497377" level="INFO">Typing text 'Worapakorn2@gmail.com' into text field 'id=identifier'.</msg>
 <arg>id=identifier</arg>
 <arg>Worapakorn2@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T05:17:41.108860" elapsed="1.254623"/>
+<status status="PASS" start="2024-07-02T23:28:40.497377" elapsed="0.826865"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:17:42.365484" level="INFO">Typing text '111111' into text field 'id=password'.</msg>
+<msg time="2024-07-02T23:28:41.325241" level="INFO">Typing text '111111' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>111111</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T05:17:42.364479" elapsed="0.440835"/>
+<status status="PASS" start="2024-07-02T23:28:41.324242" elapsed="0.281334"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//button[@type="submit"]</arg>
 <arg>1s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-26T05:17:42.805911" elapsed="0.047058"/>
+<status status="PASS" start="2024-07-02T23:28:41.606101" elapsed="0.024409"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:17:42.854099" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<msg time="2024-07-02T23:28:41.631519" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
 <arg>xpath=//button[@type="submit"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T05:17:42.853484" elapsed="0.353865"/>
+<status status="PASS" start="2024-07-02T23:28:41.630510" elapsed="0.327356"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//button[text()="ออกจากระบบ"]</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-26T05:17:43.207349" elapsed="1.294999"/>
+<status status="PASS" start="2024-07-02T23:28:41.957866" elapsed="2.045851"/>
 </kw>
 <kw name="Location Should Be" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:17:44.515701" level="INFO">Current location is 'http://localhost:3000/'.</msg>
+<msg time="2024-07-02T23:28:44.013872" level="INFO">Current location is 'http://localhost:3000/'.</msg>
 <arg>http://localhost:3000/</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="PASS" start="2024-06-26T05:17:44.503610" elapsed="0.012714"/>
+<status status="PASS" start="2024-07-02T23:28:44.004243" elapsed="0.009682"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:17:44.626965" level="INFO">Current page contains text 'ออกจากระบบ'.</msg>
+<msg time="2024-07-02T23:28:44.094000" level="INFO">Current page contains text 'ออกจากระบบ'.</msg>
 <arg>ออกจากระบบ</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-06-26T05:17:44.518078" elapsed="0.109902"/>
+<status status="PASS" start="2024-07-02T23:28:44.015092" elapsed="0.078908"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:17:44.630980" level="INFO">Executing JavaScript:
+<msg time="2024-07-02T23:28:44.100094" level="INFO">Executing JavaScript:
 return localStorage.getItem('access_token');
 Without any arguments.</msg>
 <arg>return localStorage.getItem('access_token');</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-06-26T05:17:44.629977" elapsed="0.426624"/>
+<status status="PASS" start="2024-07-02T23:28:44.099560" elapsed="0.150871"/>
 </kw>
 <arg>Execute JavaScript</arg>
 <arg>return localStorage.getItem('access_token');</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-06-26T05:17:44.628980" elapsed="0.427621"/>
+<status status="PASS" start="2024-07-02T23:28:44.098992" elapsed="0.151439"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-02T23:28:44.447800" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="login_successful.png"&gt;&lt;img src="login_successful.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>login_successful.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-07-02T23:28:44.251991" elapsed="0.196829"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-26T05:17:45.066751" elapsed="4.992903"/>
+<status status="PASS" start="2024-07-02T23:28:44.448820" elapsed="3.753336"/>
 </kw>
 <doc>ทดสอบการเข้าสู่ระบบด้วยข้อมูลที่ถูกต้องและตรวจสอบสิทธิ</doc>
 <tag>login</tag>
 <tag>positive</tag>
-<status status="PASS" start="2024-06-26T05:17:23.351866" elapsed="26.708971"/>
+<status status="PASS" start="2024-07-02T23:28:24.990670" elapsed="23.212487"/>
 </test>
-<test id="s1-t2" name="TC 1.0.002 ทดสอบการเข้าสู่ระบบเมื่อกรอก E-mail หรือ Username ผิด" line="24">
+<test id="s1-t2" name="TC 1.0.002 ทดสอบการเข้าสู่ระบบเมื่อกรอก E-mail หรือ Username ผิด" line="26">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:17:50.073184" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
+<msg time="2024-07-02T23:28:48.211144" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
 <arg>${URL}</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-26T05:17:50.072568" elapsed="20.601406"/>
+<status status="PASS" start="2024-07-02T23:28:48.210156" elapsed="15.499126"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-26T05:18:10.674974" elapsed="0.289288"/>
+<status status="PASS" start="2024-07-02T23:29:03.709282" elapsed="0.268665"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:10.966248" level="INFO">Typing text 'wrongemail@gmail.com' into text field 'id=identifier'.</msg>
+<msg time="2024-07-02T23:29:03.977947" level="INFO">Typing text 'wrongemail@gmail.com' into text field 'id=identifier'.</msg>
 <arg>id=identifier</arg>
 <arg>wrongemail@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T05:18:10.965250" elapsed="0.878340"/>
+<status status="PASS" start="2024-07-02T23:29:03.977947" elapsed="0.676099"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:11.845289" level="INFO">Typing text 'wrongpassword' into text field 'id=password'.</msg>
+<msg time="2024-07-02T23:29:04.654046" level="INFO">Typing text 'wrongpassword' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>wrongpassword</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T05:18:11.844164" elapsed="0.679039"/>
+<status status="PASS" start="2024-07-02T23:29:04.654046" elapsed="0.588704"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//button[@type="submit"]</arg>
 <arg>1s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-26T05:18:12.524209" elapsed="0.053308"/>
+<status status="PASS" start="2024-07-02T23:29:05.261035" elapsed="0.023475"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:12.579507" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<msg time="2024-07-02T23:29:05.284510" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
 <arg>xpath=//button[@type="submit"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T05:18:12.578558" elapsed="0.360759"/>
+<status status="PASS" start="2024-07-02T23:29:05.284510" elapsed="0.344938"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:12.952869" level="INFO">Current page contains text 'คุณกรอก E-mail ไม่ถูกต้อง'.</msg>
+<msg time="2024-07-02T23:29:05.629448" level="INFO">Current page contains text 'คุณกรอก E-mail ไม่ถูกต้อง'.</msg>
 <arg>คุณกรอก E-mail ไม่ถูกต้อง</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-06-26T05:18:12.940315" elapsed="0.012554"/>
+<status status="PASS" start="2024-07-02T23:29:05.629448" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-02T23:29:05.690903" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="invalid_email.png"&gt;&lt;img src="invalid_email.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>invalid_email.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-07-02T23:29:05.629448" elapsed="0.061455"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-26T05:18:12.953871" elapsed="3.389440"/>
+<status status="PASS" start="2024-07-02T23:29:05.690903" elapsed="3.269532"/>
 </kw>
 <doc>ทดสอบการเข้าสู่ระบบด้วย E-mail หรือ Username ที่ผิด</doc>
 <tag>login</tag>
 <tag>negative</tag>
-<status status="PASS" start="2024-06-26T05:17:50.065512" elapsed="26.278437"/>
+<status status="PASS" start="2024-07-02T23:28:48.205143" elapsed="20.756292"/>
 </test>
-<test id="s1-t3" name="TC 1.0.003 ทดสอบการเข้าสู่ระบบเมื่อกรอก Password ผิด" line="36">
+<test id="s1-t3" name="TC 1.0.003 ทดสอบการเข้าสู่ระบบเมื่อกรอก Password ผิด" line="39">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:16.348404" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
+<msg time="2024-07-02T23:29:08.968460" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
 <arg>${URL}</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-26T05:18:16.347794" elapsed="19.049532"/>
+<status status="PASS" start="2024-07-02T23:29:08.967443" elapsed="14.725123"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-26T05:18:35.397845" elapsed="0.286661"/>
+<status status="PASS" start="2024-07-02T23:29:23.692566" elapsed="0.281885"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:35.685507" level="INFO">Typing text 'Worapakorn2@gmail.com' into text field 'id=identifier'.</msg>
+<msg time="2024-07-02T23:29:23.974451" level="INFO">Typing text 'Worapakorn2@gmail.com' into text field 'id=identifier'.</msg>
 <arg>id=identifier</arg>
 <arg>Worapakorn2@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T05:18:35.685507" elapsed="0.913833"/>
+<status status="PASS" start="2024-07-02T23:29:23.974451" elapsed="0.768702"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:36.600340" level="INFO">Typing text 'wrongpassword' into text field 'id=password'.</msg>
+<msg time="2024-07-02T23:29:24.743153" level="INFO">Typing text 'wrongpassword' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>wrongpassword</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T05:18:36.600340" elapsed="0.416417"/>
+<status status="PASS" start="2024-07-02T23:29:24.743153" elapsed="0.383512"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//button[@type="submit"]</arg>
 <arg>1s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-26T05:18:37.017753" elapsed="0.032008"/>
+<status status="PASS" start="2024-07-02T23:29:25.127666" elapsed="0.026985"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:37.050767" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<msg time="2024-07-02T23:29:25.155653" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
 <arg>xpath=//button[@type="submit"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T05:18:37.050767" elapsed="0.339761"/>
+<status status="PASS" start="2024-07-02T23:29:25.155653" elapsed="0.295141"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:37.402526" level="INFO">Current page contains text 'คุณกรอก Password ผิด กรุณากรอก Password ให้ถูกต้อง'.</msg>
+<msg time="2024-07-02T23:29:25.463913" level="INFO">Current page contains text 'คุณกรอก Password ผิด กรุณากรอก Password ให้ถูกต้อง'.</msg>
 <arg>คุณกรอก Password ผิด กรุณากรอก Password ให้ถูกต้อง</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-06-26T05:18:37.391522" elapsed="0.011004"/>
+<status status="PASS" start="2024-07-02T23:29:25.452763" elapsed="0.011150"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-02T23:29:25.525906" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="invalid_password.png"&gt;&lt;img src="invalid_password.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>invalid_password.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-07-02T23:29:25.469536" elapsed="0.056370"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-26T05:18:37.403529" elapsed="3.704716"/>
+<status status="PASS" start="2024-07-02T23:29:25.528523" elapsed="3.432917"/>
 </kw>
 <doc>ทดสอบการเข้าสู่ระบบด้วย Password ที่ผิด</doc>
 <tag>login</tag>
 <tag>negative</tag>
-<status status="PASS" start="2024-06-26T05:18:16.345102" elapsed="24.763667"/>
+<status status="PASS" start="2024-07-02T23:29:08.962433" elapsed="19.999007"/>
 </test>
-<test id="s1-t4" name="TC 1.0.004 ทดสอบการเข้าสู่ระบบโดยไม่กรอกข้อมูล" line="48">
+<test id="s1-t4" name="TC 1.0.004 ทดสอบการเข้าสู่ระบบโดยไม่กรอกข้อมูล" line="52">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:41.113743" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
+<msg time="2024-07-02T23:29:28.977067" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000/sign-in'.</msg>
 <arg>${URL}</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-26T05:18:41.113195" elapsed="17.969919"/>
+<status status="PASS" start="2024-07-02T23:29:28.977067" elapsed="13.998559"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-26T05:18:59.084108" elapsed="0.299310"/>
+<status status="PASS" start="2024-07-02T23:29:42.976633" elapsed="0.278557"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//button[@type="submit"]</arg>
 <arg>1s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-26T05:18:59.384412" elapsed="0.167932"/>
+<status status="PASS" start="2024-07-02T23:29:43.271972" elapsed="0.260547"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:59.552344" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<msg time="2024-07-02T23:29:43.545522" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
 <arg>xpath=//button[@type="submit"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T05:18:59.552344" elapsed="0.407587"/>
+<status status="PASS" start="2024-07-02T23:29:43.545522" elapsed="0.562564"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:59.975551" level="INFO">Current page contains text 'กรุณากรอกอีเมลหรือชื่อผู้ใช้'.</msg>
+<msg time="2024-07-02T23:29:44.125238" level="INFO">Current page contains text 'กรุณากรอกอีเมลหรือชื่อผู้ใช้'.</msg>
 <arg>กรุณากรอกอีเมลหรือชื่อผู้ใช้</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-06-26T05:18:59.959931" elapsed="0.015620"/>
+<status status="PASS" start="2024-07-02T23:29:44.108086" elapsed="0.017152"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-26T05:18:59.995879" level="INFO">Current page contains text 'กรุณากรอกรหัสผ่าน'.</msg>
+<msg time="2024-07-02T23:29:44.139759" level="INFO">Current page contains text 'กรุณากรอกรหัสผ่าน'.</msg>
 <arg>กรุณากรอกรหัสผ่าน</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-06-26T05:18:59.975551" elapsed="0.020328"/>
+<status status="PASS" start="2024-07-02T23:29:44.125238" elapsed="0.014521"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-02T23:29:44.187125" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="empty_fields.png"&gt;&lt;img src="empty_fields.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>empty_fields.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-07-02T23:29:44.139759" elapsed="0.047366"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-26T05:18:59.996876" elapsed="3.672452"/>
+<status status="PASS" start="2024-07-02T23:29:44.187125" elapsed="3.289656"/>
 </kw>
 <doc>ทดสอบการเข้าสู่ระบบโดยไม่กรอกข้อมูล</doc>
 <tag>login</tag>
 <tag>negative</tag>
-<status status="PASS" start="2024-06-26T05:18:41.109863" elapsed="22.568039"/>
+<status status="PASS" start="2024-07-02T23:29:28.961440" elapsed="18.516562"/>
 </test>
 <doc>Test cases for user login functionality.</doc>
-<status status="PASS" start="2024-06-26T05:17:22.921896" elapsed="100.757012"/>
+<status status="PASS" start="2024-07-02T23:28:24.116914" elapsed="83.362808"/>
 </suite>
 <statistics>
 <total>
