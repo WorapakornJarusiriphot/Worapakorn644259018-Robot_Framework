@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-27T01:38:31.813879" rpa="false" schemaversion="5">
+<suite id="s1" name="TC9-create post game test" source="D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 2\Worapakorn644259018-Robot_Framework-main\TC9-create_post_game_test.robot">
+<kw name="Create Folder For Screenshots" type="SETUP">
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2024-09-27T01:38:32.660448" level="INFO" html="true">Directory '&lt;a href="file://D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 2\Worapakorn644259018-Robot_Framework-main\screenshots"&gt;D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 2\Worapakorn644259018-Robot_Framework-main\screenshots&lt;/a&gt;' already exists.</msg>
+<arg>screenshots</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2024-09-27T01:38:32.660448" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T01:38:32.657918" elapsed="0.003533"/>
+</kw>
+<test id="s1-t1" name="TC 9001 ทดสอบการสร้างโพสต์นัดเล่น" line="18">
+<kw name="Open Browser To Login Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:32.664947" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-in#loaded'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-27T01:38:32.663447" elapsed="3.867044"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-27T01:38:36.532493" elapsed="1.700301"/>
+</kw>
+<status status="PASS" start="2024-09-27T01:38:32.663447" elapsed="5.569347"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-27T01:38:38.235788" level="INFO">${TIMESTAMP} = 20240927_013838</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-27T01:38:38.234787" elapsed="0.002005"/>
+</kw>
+<kw name="Input Valid Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:38.240784" level="INFO">Typing text 'Worapakorn2@gmail.com' into text field 'id=identifier'.</msg>
+<arg>id=identifier</arg>
+<arg>Worapakorn2@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-27T01:38:38.238790" elapsed="0.620851"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:38.860643" level="INFO">Typing text '111111' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>111111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-27T01:38:38.860643" elapsed="0.262109"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:39.122752" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-27T01:38:39.122752" elapsed="0.174372"/>
+</kw>
+<status status="PASS" start="2024-09-27T01:38:38.237786" elapsed="1.060336"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[@id='Create-PostGames']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-27T01:38:39.299128" elapsed="0.761990"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>xpath=//a[@id='Create-PostGames']</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-09-27T01:38:40.062516" elapsed="0.173413"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//a[@id='Create-PostGames']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-27T01:38:40.236719" elapsed="0.330481"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:40.568724" level="INFO">Clicking element 'xpath=//a[@id='Create-PostGames']'.</msg>
+<arg>xpath=//a[@id='Create-PostGames']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-27T01:38:40.568203" elapsed="0.778810"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h4[contains(text(),'สร้างโพสต์นัดเล่น')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-27T01:38:41.348020" elapsed="0.043138"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:41.392157" level="INFO">Clicking element 'id=game-select'.</msg>
+<arg>id=game-select</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-27T01:38:41.392157" elapsed="0.178571"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//ul[@role='listbox']</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-27T01:38:41.571732" elapsed="0.056534"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//li[contains(text(),'Magic the gathering')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-27T01:38:41.629273" elapsed="0.355751"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:41.986026" level="INFO">Clicking element 'xpath=//li[contains(text(),'Magic the gathering')]'.</msg>
+<arg>xpath=//li[contains(text(),'Magic the gathering')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-27T01:38:41.986026" elapsed="0.375971"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:42.365005" level="INFO">Typing text 'เอา Magic the gathering ตัวเสริมมาด้วยก็ดีนะ เพราะเรามีแค่ตัวหลัก' into text field 'id=detail_post'.</msg>
+<arg>id=detail_post</arg>
+<arg>เอา Magic the gathering ตัวเสริมมาด้วยก็ดีนะ เพราะเรามีแค่ตัวหลัก</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-27T01:38:42.364006" elapsed="2.972630"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T01:38:45.338638" level="INFO">${js} = return document.querySelector('input[type="file"]').style.display = 'block';</msg>
+<var>${js}</var>
+<arg>return document.querySelector('input[type="file"]').style.display = 'block';</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T01:38:45.337633" elapsed="0.001005"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:45.341643" level="INFO">Executing JavaScript:
+return document.querySelector('input[type="file"]').style.display = 'block';
+Without any arguments.</msg>
+<arg>${js}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-09-27T01:38:45.339638" elapsed="0.013995"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:45.355637" level="INFO">Sending D:\Users\Dell\Pictures\81AlnMS8z7L.jpg to browser.</msg>
+<arg>xpath=//input[@type='file']</arg>
+<arg>${UPLOAD_IMAGE_PATH}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-09-27T01:38:45.354641" elapsed="0.114591"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-27T01:38:48.470567" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-27T01:38:45.470230" elapsed="3.000337"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id=PostGames</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-27T01:38:48.472117" elapsed="0.302526"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=PostGames</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-27T01:38:48.774643" elapsed="0.036529"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>id=PostGames</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-09-27T01:38:48.812167" elapsed="0.060024"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:48.873188" level="INFO">Clicking button 'id=PostGames'.</msg>
+<arg>id=PostGames</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-27T01:38:48.873188" elapsed="0.293022"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[contains(@class, 'MuiAlert-message') and contains(text(), 'สร้างโพสต์สำเร็จ!')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-27T01:38:49.169210" elapsed="0.845064"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-27T01:38:50.338970" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-9/TC9001-success_20240927_013838.png"&gt;&lt;img src="screenshots/TC-9/TC9001-success_20240927_013838.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-9/TC9001-success_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-27T01:38:50.015274" elapsed="0.323696"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-27T01:38:50.339972" elapsed="2.478683"/>
+</kw>
+<doc>ทดสอบการสร้างโพสต์นัดเล่น</doc>
+<tag>create_post</tag>
+<tag>positive</tag>
+<status status="PASS" start="2024-09-27T01:38:32.661451" elapsed="20.157204"/>
+</test>
+<doc>Test cases for user login functionality.</doc>
+<status status="PASS" start="2024-09-27T01:38:31.838571" elapsed="20.982072"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">create_post</stat>
+<stat pass="1" fail="0" skip="0">positive</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC9-create post game test">TC9-create post game test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

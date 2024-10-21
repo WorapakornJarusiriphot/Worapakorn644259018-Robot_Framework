@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-26T20:42:53.394926" rpa="false" schemaversion="5">
+<suite id="s1" name="Registration Test" source="D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 2\Worapakorn644259018-Robot_Framework-main\registration_test.robot">
+<kw name="Create Folder For Screenshots" type="SETUP">
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2024-09-26T20:42:53.866382" level="INFO" html="true">Directory '&lt;a href="file://D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 2\Worapakorn644259018-Robot_Framework-main\screenshots"&gt;D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 2\Worapakorn644259018-Robot_Framework-main\screenshots&lt;/a&gt;' already exists.</msg>
+<arg>screenshots</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2024-09-26T20:42:53.866382" elapsed="0.001004"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:42:53.864386" elapsed="0.003000"/>
+</kw>
+<test id="s1-t1" name="TC 2001 ทดสอบการสมัครสมาชิกด้วยข้อมูลที่ถูกต้อง" line="16">
+<kw name="Open Browser To Registration Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:42:53.874397" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:42:53.873403" elapsed="2.176978"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:42:56.051385" elapsed="0.080124"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:42:53.872392" elapsed="2.259117"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:42:56.135500" level="INFO">${TIMESTAMP} = 20240926204256</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:42:56.133503" elapsed="0.001997"/>
+</kw>
+<kw name="Fill Registration Form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:42:56.139491" level="INFO">Typing text 'วรปกร' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>วรปกร</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:42:56.138497" elapsed="0.924989"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:42:57.064489" level="INFO">Typing text 'จารุศิริพจน์' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>จารุศิริพจน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:42:57.063486" elapsed="0.595964"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:42:57.660461" level="INFO">Clicking element 'css=input[type='radio'][value='ชาย']'.</msg>
+<arg>css=input[type='radio'][value='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:42:57.659450" elapsed="0.158013"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:42:57.819460" level="INFO">${TIMESTAMP} = 20240926204257</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:42:57.818473" elapsed="0.000987"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:42:57.820460" level="INFO">Typing text 'worapakorn20240926204257' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>worapakorn${TIMESTAMP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:42:57.819460" elapsed="0.583728"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:42:58.404198" level="INFO">Typing text '0623844415' into text field 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<arg>0623844415</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:42:58.403188" elapsed="0.311358"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:42:58.715551" level="INFO">Typing text 'worapakorn20240926204257@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>worapakorn${TIMESTAMP}@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:42:58.715551" elapsed="0.863619"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:42:59.580167" level="INFO">Typing text 'Password-123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Password-123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:42:59.579170" elapsed="0.423067"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:42:56.137502" elapsed="3.864735"/>
+</kw>
+<kw name="Fill Birthdate">
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:00.004256" elapsed="0.088539"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:00.093790" level="INFO">Executing JavaScript:
+document.getElementById(":R1ld7hkl9uuja:").value="01/01/2000"
+Without any arguments.</msg>
+<arg>document.getElementById(":R1ld7hkl9uuja:").value="${birthdate}"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-09-26T20:43:00.092795" elapsed="0.020994"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:43:01.114938" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:43:00.114794" elapsed="1.000144"/>
+</kw>
+<arg>01/01/2000</arg>
+<status status="PASS" start="2024-09-26T20:43:00.003237" elapsed="1.111701"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:01.115454" level="INFO">Sending key(s) ('\\13',) to css=input[placeholder="MM/DD/YYYY"] element.</msg>
+<msg time="2024-09-26T20:43:01.463404" level="INFO">Sending keys \13</msg>
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-26T20:43:01.115454" elapsed="0.497755"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:43:02.614604" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:43:01.613894" elapsed="1.000710"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[contains(@class, 'MuiAlert-message') and contains(text(), 'สมัครสมาชิกสำเร็จ!')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:43:02.614604" elapsed="24.537240"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:27.377520" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-2/TC20001-success_20240926204256.png"&gt;&lt;img src="screenshots/TC-2/TC20001-success_20240926204256.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-2/TC20001-success_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:43:27.152843" elapsed="0.224677"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:43:27.379672" elapsed="2.467143"/>
+</kw>
+<doc>ทดสอบการสมัครสมาชิกด้วยข้อมูลที่ถูกต้อง</doc>
+<tag>positive</tag>
+<tag>registration</tag>
+<status status="PASS" start="2024-09-26T20:42:53.867386" elapsed="35.980433"/>
+</test>
+<test id="s1-t2" name="TC 2002 ทดสอบการสมัครสมาชิกโดยไม่กรอกข้อมูล" line="27">
+<kw name="Open Browser To Registration Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:29.853822" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:43:29.852819" elapsed="1.860751"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:43:31.714569" elapsed="0.065557"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:43:29.852819" elapsed="1.927307"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:43:31.782140" level="INFO">${TIMESTAMP} = 20240926204331</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:43:31.781126" elapsed="0.001014"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:31.783128" level="INFO">Clicking button 'css=button[type="submit"]'.</msg>
+<arg>css=button[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:31.783128" elapsed="0.787473"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'กรุณากรอกชื่อจริง')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:43:32.571605" elapsed="0.051007"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'กรุณากรอกนามสกุล')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:43:32.623721" elapsed="0.046995"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'กรุณากรอกชื่อผู้ใช้')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:43:32.670716" elapsed="0.046025"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'กรุณากรอกหมายเลขโทรศัพท์')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:43:32.716741" elapsed="0.046088"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'กรุณากรอกอีเมล')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:43:32.762829" elapsed="0.046608"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'กรุณากรอกรหัสผ่าน')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:43:32.811437" elapsed="0.044533"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'กรุณาเลือกวันเกิด')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:43:32.856969" elapsed="0.048031"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'กรุณาเลือกเพศ')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:43:32.905000" elapsed="0.048068"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:33.184759" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-2/TC20002-fail_20240926204331.png"&gt;&lt;img src="screenshots/TC-2/TC20002-fail_20240926204331.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-2/TC20002-fail_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:43:32.954068" elapsed="0.230691"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:43:33.186760" elapsed="2.273467"/>
+</kw>
+<doc>ทดสอบการสมัครสมาชิกโดยไม่กรอกข้อมูล</doc>
+<tag>negative</tag>
+<tag>registration</tag>
+<status status="PASS" start="2024-09-26T20:43:29.848818" elapsed="5.612425"/>
+</test>
+<test id="s1-t3" name="TC 2003 ทดสอบการสมัครสมาชิกด้วยอีเมลที่ไม่ถูกต้อง" line="42">
+<kw name="Open Browser To Registration Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:35.471245" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:43:35.470246" elapsed="2.090133"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:43:37.560379" elapsed="0.118576"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:43:35.469232" elapsed="2.209723"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:43:37.680949" level="INFO">${TIMESTAMP} = 20240926204337</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:43:37.679947" elapsed="0.001002"/>
+</kw>
+<kw name="Fill Registration Form With Invalid Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:37.683952" level="INFO">Typing text 'วรปกร' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>วรปกร</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:37.682949" elapsed="0.707579"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:38.391534" level="INFO">Typing text 'จารุศิริพจน์' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>จารุศิริพจน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:38.391534" elapsed="0.629374"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:39.021909" level="INFO">Clicking element 'css=input[type='radio'][value='ชาย']'.</msg>
+<arg>css=input[type='radio'][value='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:39.020908" elapsed="0.152446"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:43:39.174362" level="INFO">${TIMESTAMP} = 20240926204339</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:43:39.174362" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:39.174362" level="INFO">Typing text 'worapakorn20240926204339' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>worapakorn${TIMESTAMP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:39.174362" elapsed="0.710550"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:39.885911" level="INFO">Typing text '0623844415' into text field 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<arg>0623844415</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:39.885911" elapsed="0.283839"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:40.170758" level="INFO">Typing text 'worapakorn.invalid' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>worapakorn.invalid</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:40.169750" elapsed="0.483024"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:40.653781" level="INFO">Typing text 'Password-123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Password-123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:40.653781" elapsed="0.333057"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:43:37.681960" elapsed="3.304878"/>
+</kw>
+<kw name="Fill Birthdate">
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:40.989838" elapsed="0.066546"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:41.057387" level="INFO">Executing JavaScript:
+document.getElementById(":R1ld7hkl9uuja:").value="01/01/2000"
+Without any arguments.</msg>
+<arg>document.getElementById(":R1ld7hkl9uuja:").value="${birthdate}"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-09-26T20:43:41.056384" elapsed="0.018020"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:43:42.074665" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:43:41.074404" elapsed="1.000261"/>
+</kw>
+<arg>01/01/2000</arg>
+<status status="PASS" start="2024-09-26T20:43:40.988839" elapsed="1.086348"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:42.076854" level="INFO">Sending key(s) ('\\13',) to css=input[placeholder="MM/DD/YYYY"] element.</msg>
+<msg time="2024-09-26T20:43:42.406093" level="INFO">Sending keys \13</msg>
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-26T20:43:42.076081" elapsed="0.369252"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:43:43.446710" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:43:42.446330" elapsed="1.000380"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'กรุณากรอกอีเมลให้ถูกต้อง')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:43:43.447232" elapsed="4.382650"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:47.965427" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-2/TC20003-fail_20240926204337.png"&gt;&lt;img src="screenshots/TC-2/TC20003-fail_20240926204337.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-2/TC20003-fail_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:43:47.830870" elapsed="0.134557"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:43:47.966426" elapsed="2.226653"/>
+</kw>
+<doc>ทดสอบการสมัครสมาชิกด้วยอีเมลที่ไม่ถูกต้อง</doc>
+<tag>negative</tag>
+<tag>registration</tag>
+<status status="PASS" start="2024-09-26T20:43:35.463246" elapsed="14.730845"/>
+</test>
+<test id="s1-t4" name="TC 2004 ทดสอบการสมัครสมาชิกด้วย Username ที่ซ้ำกับในฐานข้อมูล" line="53">
+<kw name="Open Browser To Registration Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:50.199090" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:43:50.199090" elapsed="3.479250"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:43:53.678340" elapsed="0.284824"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:43:50.198078" elapsed="3.766082"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:43:53.966158" level="INFO">${TIMESTAMP} = 20240926204353</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:43:53.966158" elapsed="0.001002"/>
+</kw>
+<kw name="Fill Registration Form With Duplicate Username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:53.977151" level="INFO">Typing text 'วรปกร' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>วรปกร</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:53.976167" elapsed="0.540213"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:54.516380" level="INFO">Typing text 'จารุศิริพจน์' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>จารุศิริพจน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:54.516380" elapsed="0.635650"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:55.153028" level="INFO">Clicking element 'css=input[type='radio'][value='ชาย']'.</msg>
+<arg>css=input[type='radio'][value='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:55.153028" elapsed="0.160823"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:55.314856" level="INFO">Typing text 'WOJA' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>WOJA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:55.314856" elapsed="0.228572"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:55.544429" level="INFO">Typing text '0623844415' into text field 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<arg>0623844415</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:55.544429" elapsed="0.327745"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:55.873174" level="INFO">Typing text 'Worapakorn@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>Worapakorn@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:55.872174" elapsed="0.615036"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:56.487970" level="INFO">Typing text 'Password-123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Password-123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:56.487454" elapsed="0.385896"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:43:53.975156" elapsed="2.898194"/>
+</kw>
+<kw name="Fill Birthdate">
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:43:56.874341" elapsed="0.089652"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:56.964995" level="INFO">Executing JavaScript:
+document.getElementById(":R1ld7hkl9uuja:").value="01/01/2000"
+Without any arguments.</msg>
+<arg>document.getElementById(":R1ld7hkl9uuja:").value="${birthdate}"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-09-26T20:43:56.963993" elapsed="0.020998"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:43:57.986571" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:43:56.985995" elapsed="1.000576"/>
+</kw>
+<arg>01/01/2000</arg>
+<status status="PASS" start="2024-09-26T20:43:56.874341" elapsed="1.112230"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:43:57.987580" level="INFO">Sending key(s) ('\\13',) to css=input[placeholder="MM/DD/YYYY"] element.</msg>
+<msg time="2024-09-26T20:43:58.307283" level="INFO">Sending keys \13</msg>
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-26T20:43:57.987580" elapsed="0.382789"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:44:13.371942" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:43:58.371369" elapsed="15.000573"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'Username นี้มีคนใช้แล้ว')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:44:13.372969" elapsed="0.038991"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:13.542096" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-2/TC20004-fail_20240926204353.png"&gt;&lt;img src="screenshots/TC-2/TC20004-fail_20240926204353.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-2/TC20004-fail_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:44:13.412959" elapsed="0.130141"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:44:13.544105" elapsed="2.242845"/>
+</kw>
+<doc>ทดสอบการสมัครสมาชิกด้วย Username ซ้ำ</doc>
+<tag>negative</tag>
+<tag>registration</tag>
+<status status="PASS" start="2024-09-26T20:43:50.195078" elapsed="25.592879"/>
+</test>
+<test id="s1-t5" name="TC 2005 ตรวจสอบการสมัครสมาชิกด้วย Password ที่ไม่ถูกต้อง" line="64">
+<kw name="Open Browser To Registration Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:15.798968" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:44:15.797969" elapsed="1.514649"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:44:17.313618" elapsed="0.538967"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:44:15.796954" elapsed="2.055631"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:44:17.854583" level="INFO">${TIMESTAMP} = 20240926204417</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:44:17.854583" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Registration Form With Invalid Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:17.858610" level="INFO">Typing text 'วรปกร' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>วรปกร</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:17.857609" elapsed="0.918177"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:18.776777" level="INFO">Typing text 'จารุศิริพจน์' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>จารุศิริพจน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:18.775786" elapsed="0.722971"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:19.499761" level="INFO">Clicking element 'css=input[type='radio'][value='ชาย']'.</msg>
+<arg>css=input[type='radio'][value='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:19.498757" elapsed="0.290919"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:44:19.790754" level="INFO">${TIMESTAMP} = 20240926204419</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:44:19.790191" elapsed="0.000563"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:19.792001" level="INFO">Typing text 'worapakorn20240926204419' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>worapakorn${TIMESTAMP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:19.791318" elapsed="0.759844"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:20.553157" level="INFO">Typing text '0623844415' into text field 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<arg>0623844415</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:20.552162" elapsed="0.369201"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:20.922368" level="INFO">Typing text 'worapakorn20240926204419@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>worapakorn${TIMESTAMP}@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:20.921363" elapsed="0.778471"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:21.700840" level="INFO">Typing text 'pass' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>pass</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:21.700840" elapsed="0.299098"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:22.001950" level="INFO">Clicking element 'id=password'.</msg>
+<arg>id=password</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:22.000946" elapsed="0.135960"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:22.137905" level="INFO">Clicking button 'css=button[type="submit"]'.</msg>
+<arg>css=button[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:22.136906" elapsed="0.157745"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:44:17.856605" elapsed="4.439045"/>
+</kw>
+<kw name="Fill Birthdate">
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:22.296651" elapsed="0.063010"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:22.360659" level="INFO">Executing JavaScript:
+document.getElementById(":R1ld7hkl9uuja:").value="01/01/2000"
+Without any arguments.</msg>
+<arg>document.getElementById(":R1ld7hkl9uuja:").value="${birthdate}"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-09-26T20:44:22.359661" elapsed="0.027846"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:44:23.388603" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:44:22.387507" elapsed="1.001096"/>
+</kw>
+<arg>01/01/2000</arg>
+<status status="PASS" start="2024-09-26T20:44:22.296651" elapsed="1.091952"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:23.389615" level="INFO">Sending key(s) ('\\13',) to css=input[placeholder="MM/DD/YYYY"] element.</msg>
+<msg time="2024-09-26T20:44:23.691759" level="INFO">Sending keys \13</msg>
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-26T20:44:23.388603" elapsed="0.377188"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:44:38.767238" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:44:23.766798" elapsed="15.000440"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'รหัสผ่านต้องมีอย่างน้อย 8 ตัวอักษร')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:44:38.767238" elapsed="2.217025"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:41.088796" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-2/TC20005-fail_20240926204417.png"&gt;&lt;img src="screenshots/TC-2/TC20005-fail_20240926204417.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-2/TC20005-fail_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:44:40.985252" elapsed="0.103544"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:44:41.089798" elapsed="2.255785"/>
+</kw>
+<doc>ทดสอบการสมัครสมาชิกด้วย Password ที่ไม่ถูกต้อง</doc>
+<tag>negative</tag>
+<tag>registration</tag>
+<status status="PASS" start="2024-09-26T20:44:15.789960" elapsed="27.556630"/>
+</test>
+<test id="s1-t6" name="TC 2006 ตรวจสอบการสมัครสมาชิกด้วยหมายเลขโทรศัพท์ที่ไม่ถูกต้อง" line="75">
+<kw name="Open Browser To Registration Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:43.357604" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:44:43.356604" elapsed="2.308627"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:44:45.666233" elapsed="0.277574"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:44:43.356604" elapsed="2.587203"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:44:45.945799" level="INFO">${TIMESTAMP} = 20240926204445</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:44:45.944804" elapsed="0.000995"/>
+</kw>
+<kw name="Fill Registration Form With Invalid PhoneNumber">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:45.948801" level="INFO">Typing text 'วรปกร' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>วรปกร</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:45.947804" elapsed="0.546920"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:46.495723" level="INFO">Typing text 'จารุศิริพจน์' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>จารุศิริพจน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:46.494724" elapsed="0.785518"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:47.281243" level="INFO">Clicking element 'css=input[type='radio'][value='ชาย']'.</msg>
+<arg>css=input[type='radio'][value='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:47.280242" elapsed="0.242573"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:44:47.523814" level="INFO">${TIMESTAMP} = 20240926204447</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:44:47.522815" elapsed="0.000999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:47.524813" level="INFO">Typing text 'worapakorn20240926204447' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>worapakorn${TIMESTAMP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:47.523814" elapsed="0.893883"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:48.418690" level="INFO">Typing text 'abc12345' into text field 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<arg>abc12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:48.418690" elapsed="0.321227"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:48.740905" level="INFO">Typing text 'worapakorn20240926204447@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>worapakorn${TIMESTAMP}@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:48.739917" elapsed="0.762651"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:49.502568" level="INFO">Typing text 'Password-123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Password-123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:49.502568" elapsed="0.356586"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:49.860150" level="INFO">Clicking element 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:49.860150" elapsed="0.113663"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:44:45.947804" elapsed="4.027016"/>
+</kw>
+<kw name="Fill Birthdate">
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:44:49.976826" elapsed="0.072870"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:50.050704" level="INFO">Executing JavaScript:
+document.getElementById(":R1ld7hkl9uuja:").value="01/01/2000"
+Without any arguments.</msg>
+<arg>document.getElementById(":R1ld7hkl9uuja:").value="${birthdate}"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-09-26T20:44:50.049696" elapsed="0.033994"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:44:51.085004" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:44:50.083690" elapsed="1.001314"/>
+</kw>
+<arg>01/01/2000</arg>
+<status status="PASS" start="2024-09-26T20:44:49.974820" elapsed="1.110184"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:44:51.087077" level="INFO">Sending key(s) ('\\13',) to css=input[placeholder="MM/DD/YYYY"] element.</msg>
+<msg time="2024-09-26T20:44:51.417284" level="INFO">Sending keys \13</msg>
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-26T20:44:51.086073" elapsed="0.368211"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:45:06.455604" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:44:51.455283" elapsed="15.000321"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'เบอร์โทรศัพท์ต้องเป็นหมายเลขเบอร์โทรศัพท์จริงๆเท่านั้น')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:45:06.456663" elapsed="0.053451"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:06.720007" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-2/TC20006-fail_20240926204445.png"&gt;&lt;img src="screenshots/TC-2/TC20006-fail_20240926204445.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-2/TC20006-fail_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:45:06.511203" elapsed="0.208804"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:45:06.722011" elapsed="2.295472"/>
+</kw>
+<doc>ทดสอบการสมัครสมาชิกด้วยหมายเลขโทรศัพท์ที่ไม่ถูกต้อง</doc>
+<tag>negative</tag>
+<tag>registration</tag>
+<status status="PASS" start="2024-09-26T20:44:43.349591" elapsed="25.668885"/>
+</test>
+<test id="s1-t7" name="TC 2007 ตรวจสอบการสมัครสมาชิกด้วย Phone Number ที่ไม่ถูกต้อง" line="86">
+<kw name="Open Browser To Registration Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:09.024479" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:45:09.024479" elapsed="2.264008"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:45:11.288487" elapsed="0.244528"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:45:09.023473" elapsed="2.509542"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:45:11.535023" level="INFO">${TIMESTAMP} = 20240926204511</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:45:11.534025" elapsed="0.000998"/>
+</kw>
+<kw name="Fill Registration Form With Invalid PhoneNumber">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:11.539024" level="INFO">Typing text 'วรปกร' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>วรปกร</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:11.537022" elapsed="0.626803"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:12.164823" level="INFO">Typing text 'จารุศิริพจน์' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>จารุศิริพจน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:12.163825" elapsed="0.647455"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:12.812287" level="INFO">Clicking element 'css=input[type='radio'][value='ชาย']'.</msg>
+<arg>css=input[type='radio'][value='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:12.812287" elapsed="0.173087"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:45:12.986375" level="INFO">${TIMESTAMP} = 20240926204512</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:45:12.985374" elapsed="0.001001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:12.986375" level="INFO">Typing text 'worapakorn20240926204512' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>worapakorn${TIMESTAMP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:12.986375" elapsed="0.625070"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:13.612043" level="INFO">Typing text 'abc12345' into text field 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<arg>abc12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:13.611520" elapsed="0.368721"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:13.982250" level="INFO">Typing text 'worapakorn20240926204512@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>worapakorn${TIMESTAMP}@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:13.981253" elapsed="0.764024"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:14.746284" level="INFO">Typing text 'Password-123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Password-123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:14.746284" elapsed="0.387548"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:15.134842" level="INFO">Clicking element 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:15.133832" elapsed="0.122542"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:45:11.536023" elapsed="3.720351"/>
+</kw>
+<kw name="Fill Birthdate">
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:15.257371" elapsed="0.062024"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:15.320395" level="INFO">Executing JavaScript:
+document.getElementById(":R1ld7hkl9uuja:").value="01/01/2000"
+Without any arguments.</msg>
+<arg>document.getElementById(":R1ld7hkl9uuja:").value="${birthdate}"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-09-26T20:45:15.319395" elapsed="0.013509"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:45:16.333433" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:45:15.332904" elapsed="1.000529"/>
+</kw>
+<arg>01/01/2000</arg>
+<status status="PASS" start="2024-09-26T20:45:15.257371" elapsed="1.076601"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:16.334992" level="INFO">Sending key(s) ('\\13',) to css=input[placeholder="MM/DD/YYYY"] element.</msg>
+<msg time="2024-09-26T20:45:16.662231" level="INFO">Sending keys \13</msg>
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-26T20:45:16.334992" elapsed="0.377236"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:45:31.713901" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:45:16.712228" elapsed="15.001673"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'เบอร์โทรศัพท์ต้องเป็นหมายเลขเบอร์โทรศัพท์จริงๆเท่านั้น')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:45:31.714915" elapsed="0.055545"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:31.918157" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-2/TC20007-fail_20240926204511.png"&gt;&lt;img src="screenshots/TC-2/TC20007-fail_20240926204511.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-2/TC20007-fail_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:45:31.771462" elapsed="0.147697"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:45:31.920159" elapsed="2.451145"/>
+</kw>
+<doc>ตรวจสอบการสมัครสมาชิกด้วย Phone Number ที่ไม่ถูกต้อง</doc>
+<tag>negative</tag>
+<tag>registration</tag>
+<status status="PASS" start="2024-09-26T20:45:09.019473" elapsed="25.352904"/>
+</test>
+<test id="s1-t8" name="TC 2008 ตรวจสอบการสมัครสมาชิกด้วยวันเกิดที่ไม่ถูกต้อง" line="97">
+<kw name="Open Browser To Registration Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:34.380079" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-up'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:45:34.379476" elapsed="2.177025"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:45:36.556501" elapsed="0.281304"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:45:34.378883" elapsed="2.458922"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:45:36.847183" level="INFO">${TIMESTAMP} = 20240926204536</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:45:36.846187" elapsed="0.000996"/>
+</kw>
+<kw name="Fill Registration Form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:36.850187" level="INFO">Typing text 'วรปกร' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>วรปกร</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:36.849192" elapsed="0.701213"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:37.551403" level="INFO">Typing text 'จารุศิริพจน์' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>จารุศิริพจน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:37.550405" elapsed="0.865669"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:38.417074" level="INFO">Clicking element 'css=input[type='radio'][value='ชาย']'.</msg>
+<arg>css=input[type='radio'][value='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:38.416074" elapsed="0.212093"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:45:38.629168" level="INFO">${TIMESTAMP} = 20240926204538</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:45:38.628167" elapsed="0.001001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:38.630172" level="INFO">Typing text 'worapakorn20240926204538' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>worapakorn${TIMESTAMP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:38.629168" elapsed="0.757978"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:39.387146" level="INFO">Typing text '0623844415' into text field 'id=phoneNumber'.</msg>
+<arg>id=phoneNumber</arg>
+<arg>0623844415</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:39.387146" elapsed="0.406428"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:39.794582" level="INFO">Typing text 'worapakorn20240926204538@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>worapakorn${TIMESTAMP}@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:39.794582" elapsed="0.719537"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:40.515110" level="INFO">Typing text 'Password-123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Password-123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:40.514119" elapsed="0.394483"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:45:36.848203" elapsed="4.060399"/>
+</kw>
+<kw name="Fill Birthdate">
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:45:40.909602" elapsed="0.065546"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:40.977149" level="INFO">Executing JavaScript:
+document.getElementById(":R1ld7hkl9uuja:").value="01/01/2022"
+Without any arguments.</msg>
+<arg>document.getElementById(":R1ld7hkl9uuja:").value="${birthdate}"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-09-26T20:45:40.976144" elapsed="0.037002"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:45:42.013413" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:45:41.013146" elapsed="1.000267"/>
+</kw>
+<arg>01/01/2022</arg>
+<status status="PASS" start="2024-09-26T20:45:40.909602" elapsed="1.103811"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:42.013927" level="INFO">Sending key(s) ('\\13',) to css=input[placeholder="MM/DD/YYYY"] element.</msg>
+<msg time="2024-09-26T20:45:42.326734" level="INFO">Sending keys \13</msg>
+<arg>css=input[placeholder="MM/DD/YYYY"]</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-26T20:45:42.013927" elapsed="0.362346"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:45:57.377743" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:45:42.377272" elapsed="15.000471"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'วันเกิดต้องไม่ต่ำกว่า 10 ปีจากวันปัจจุบัน')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:45:57.378768" elapsed="0.071117"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:45:57.621946" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-2/TC20008-fail_20240926204536.png"&gt;&lt;img src="screenshots/TC-2/TC20008-fail_20240926204536.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-2/TC20008-fail_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:45:57.450886" elapsed="0.171060"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:45:57.622946" elapsed="2.480865"/>
+</kw>
+<doc>ตรวจสอบการสมัครสมาชิกด้วยวันเกิดที่ไม่ถูกต้อง</doc>
+<tag>negative</tag>
+<tag>registration</tag>
+<status status="PASS" start="2024-09-26T20:45:34.374691" elapsed="25.730123"/>
+</test>
+<doc>Test cases for user registration functionality.</doc>
+<status status="PASS" start="2024-09-26T20:42:53.397931" elapsed="186.708882"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="7" fail="0" skip="0">negative</stat>
+<stat pass="1" fail="0" skip="0">positive</stat>
+<stat pass="8" fail="0" skip="0">registration</stat>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="Registration Test">Registration Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

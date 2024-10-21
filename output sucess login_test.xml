@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-09-26T20:22:21.675201" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 2\Worapakorn644259018-Robot_Framework-main\login_test.robot">
+<kw name="Create Folder For Screenshots" type="SETUP">
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2024-09-26T20:22:22.170963" level="INFO" html="true">Directory '&lt;a href="file://D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 2\Worapakorn644259018-Robot_Framework-main\screenshots"&gt;D:\University Work\Year 4, Term 1\Advanced Software Testing (Naruephon)\Task\Task 2\Worapakorn644259018-Robot_Framework-main\screenshots&lt;/a&gt;' already exists.</msg>
+<arg>screenshots</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2024-09-26T20:22:22.169947" elapsed="0.001016"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:22:22.168947" elapsed="0.002016"/>
+</kw>
+<test id="s1-t1" name="TC 1001 ทดสอบการเข้าสู่ระบบด้วยข้อมูลที่ถูกต้อง" line="17">
+<kw name="Open Browser To Login Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:22.175958" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-in#loaded'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:22:22.174952" elapsed="6.259935"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:22:28.434887" elapsed="0.043533"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:22:22.174952" elapsed="6.304469"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:22:28.482422" level="INFO">${TIMESTAMP} = 20240926_202228</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:22:28.481419" elapsed="0.001003"/>
+</kw>
+<kw name="Input Valid Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:28.485431" level="INFO">Typing text 'Worapakorn2@gmail.com' into text field 'id=identifier'.</msg>
+<arg>id=identifier</arg>
+<arg>Worapakorn2@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:28.484427" elapsed="0.469658"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:28.954085" level="INFO">Typing text '111111' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>111111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:28.954085" elapsed="0.234794"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:29.188879" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:29.188879" elapsed="0.135151"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:22:28.483421" elapsed="0.840609"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-09-26T20:22:29.324030" elapsed="0.002001"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[@id="Sign-Out"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:22:29.326031" elapsed="1.607594"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//button[@id="Sign-Out"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-26T20:22:30.934624" elapsed="0.285658"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-26T20:22:33.220746" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-26T20:22:31.220529" elapsed="2.000217"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:33.525156" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-1/TC10001-success_20240926_202228.png"&gt;&lt;img src="screenshots/TC-1/TC10001-success_20240926_202228.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-1/TC10001-success_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:22:33.221255" elapsed="0.303901"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:22:33.526158" elapsed="2.277936"/>
+</kw>
+<doc>ทดสอบการเข้าสู่ระบบด้วยข้อมูลที่ถูกต้อง</doc>
+<tag>login</tag>
+<tag>positive</tag>
+<status status="PASS" start="2024-09-26T20:22:22.170963" elapsed="13.633131"/>
+</test>
+<test id="s1-t2" name="TC 1002 ทดสอบการเข้าสู่ระบบเมื่อกรอก E-mail หรือ Username ผิด" line="29">
+<kw name="Open Browser To Login Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:35.804094" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-in#loaded'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:22:35.804094" elapsed="2.201545"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:22:38.005639" elapsed="0.115523"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:22:35.804094" elapsed="2.317717"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:22:38.138713" level="INFO">${TIMESTAMP} = 20240926_202238</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:22:38.137558" elapsed="0.001155"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:38.158669" level="INFO">Typing text 'wrongemail@gmail.com' into text field 'id=identifier'.</msg>
+<arg>id=identifier</arg>
+<arg>wrongemail@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:38.157922" elapsed="0.497951"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:38.655873" level="INFO">Typing text 'wrongpassword' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>wrongpassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:38.655873" elapsed="0.400563"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:39.056436" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:39.056436" elapsed="0.112827"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-09-26T20:22:39.169263" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'คุณกรอก E-mail ไม่ถูกต้อง')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:22:39.175088" elapsed="0.447717"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:39.638423" level="INFO">Current page contains text 'คุณกรอก E-mail ไม่ถูกต้อง'.</msg>
+<arg>คุณกรอก E-mail ไม่ถูกต้อง</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-26T20:22:39.622805" elapsed="0.015618"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:39.838325" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-1/TC10002-fail_20240926_202238.png"&gt;&lt;img src="screenshots/TC-1/TC10002-fail_20240926_202238.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-1/TC10002-fail_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:22:39.638423" elapsed="0.199902"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:22:39.838325" elapsed="2.202657"/>
+</kw>
+<doc>ทดสอบการเข้าสู่ระบบด้วย E-mail หรือ Username ที่ผิด</doc>
+<tag>login</tag>
+<tag>negative</tag>
+<status status="PASS" start="2024-09-26T20:22:35.804094" elapsed="6.236888"/>
+</test>
+<test id="s1-t3" name="TC 1003 ทดสอบการเข้าสู่ระบบเมื่อกรอก Password ผิด" line="41">
+<kw name="Open Browser To Login Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:42.045996" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-in#loaded'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:22:42.045996" elapsed="1.931533"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:22:43.977529" elapsed="0.232317"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:22:42.044979" elapsed="2.164867"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:22:44.210846" level="INFO">${TIMESTAMP} = 20240926_202244</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:22:44.210846" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:44.212842" level="INFO">Typing text 'Worapakorn2@gmail.com' into text field 'id=identifier'.</msg>
+<arg>id=identifier</arg>
+<arg>Worapakorn2@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:44.211843" elapsed="0.553522"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:44.765365" level="INFO">Typing text 'wrongpassword' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>wrongpassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:44.765365" elapsed="0.466078"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:45.231443" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:45.231443" elapsed="0.153333"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-09-26T20:22:45.384776" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(text(),'คุณกรอก Password ผิด กรุณากรอก Password ให้ถูกต้อง')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:22:45.384776" elapsed="0.470880"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:45.880511" level="INFO">Current page contains text 'คุณกรอก Password ผิด กรุณากรอก Password ให้ถูกต้อง'.</msg>
+<arg>คุณกรอก Password ผิด กรุณากรอก Password ให้ถูกต้อง</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-26T20:22:45.855656" elapsed="0.024855"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:46.124295" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-1/TC10003-fail_20240926_202244.png"&gt;&lt;img src="screenshots/TC-1/TC10003-fail_20240926_202244.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-1/TC10003-fail_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:22:45.880511" elapsed="0.243784"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:22:46.124295" elapsed="2.211128"/>
+</kw>
+<doc>ทดสอบการเข้าสู่ระบบด้วย Password ที่ผิด</doc>
+<tag>login</tag>
+<tag>negative</tag>
+<status status="PASS" start="2024-09-26T20:22:42.042986" elapsed="6.293467"/>
+</test>
+<test id="s1-t4" name="TC 1004 ทดสอบการเข้าสู่ระบบโดยไม่กรอกข้อมูล" line="53">
+<kw name="Open Browser To Login Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:48.341453" level="INFO">Opening browser 'chrome' to base url 'https://dicedreams-eta.vercel.app/sign-in#loaded'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T20:22:48.340452" elapsed="1.875060"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-26T20:22:50.215512" elapsed="0.054428"/>
+</kw>
+<status status="PASS" start="2024-09-26T20:22:48.340452" elapsed="1.929488"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-09-26T20:22:50.269940" level="INFO">${TIMESTAMP} = 20240926_202250</msg>
+<var>${TIMESTAMP}</var>
+<arg>result_format=${TIME_FORMAT}</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-09-26T20:22:50.269940" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:50.269940" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:50.269940" elapsed="0.382730"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:50.654603" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T20:22:50.653585" elapsed="0.147282"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-09-26T20:22:50.800867" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[@id="identifier-helper-text"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:22:50.800867" elapsed="0.046284"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:50.878843" level="INFO">Current page contains text 'กรุณากรอกอีเมลหรือชื่อผู้ใช้'.</msg>
+<arg>กรุณากรอกอีเมลหรือชื่อผู้ใช้</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-26T20:22:50.847151" elapsed="0.031692"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[@id="password-helper-text"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T20:22:50.878843" elapsed="0.047759"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:50.957852" level="INFO">Current page contains text 'กรุณากรอกรหัสผ่าน'.</msg>
+<arg>กรุณากรอกรหัสผ่าน</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-26T20:22:50.926602" elapsed="0.031250"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-26T20:22:51.130591" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/TC-1/TC10004-fail_20240926_202250.png"&gt;&lt;img src="screenshots/TC-1/TC10004-fail_20240926_202250.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/TC-1/TC10004-fail_${TIMESTAMP}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-26T20:22:50.957852" elapsed="0.172739"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T20:22:51.130591" elapsed="2.247937"/>
+</kw>
+<doc>ทดสอบการเข้าสู่ระบบโดยไม่กรอกข้อมูล</doc>
+<tag>login</tag>
+<tag>negative</tag>
+<status status="PASS" start="2024-09-26T20:22:48.337454" elapsed="5.041074"/>
+</test>
+<doc>Test cases for user login functionality.</doc>
+<status status="PASS" start="2024-09-26T20:22:21.679234" elapsed="31.699294"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="0" skip="0">login</stat>
+<stat pass="3" fail="0" skip="0">negative</stat>
+<stat pass="1" fail="0" skip="0">positive</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Login Test">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
